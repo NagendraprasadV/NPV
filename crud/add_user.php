@@ -235,21 +235,21 @@ include_once 'header.php';
             }
          }
 
-         function validate_address() {
-            var pattern =/^[#.0-9a-zA-Z\s,-]+$/;
-            var address = $("#address").val();
+//          function validate_address() {
+//             var pattern =/^[#.0-9a-zA-Z\s,-]+$/;
+//             var address = $("#address").val();
             
-            if (pattern.test(address) && (address !== '')) {
-               $("#address_error_message").hide();
-               $("#address").css("border-bottom","2px solid #34F458");
-            } else {
-               $("#address_error_message").html("Invalid employee id and it shoud be less than 20 characters");
-               $("#address_error_message").show();
-               $("#address").css("border-bottom","2px solid #F90A0A");
-               $("#address_error_message").css("color","#F90A0A");
-               address_error = true;
-            }
-         }  
+//             if (pattern.test(address) && (address !== '')) {
+//                $("#address_error_message").hide();
+//                $("#address").css("border-bottom","2px solid #34F458");
+//             } else {
+//                $("#address_error_message").html("Invalid employee id and it shoud be less than 20 characters");
+//                $("#address_error_message").show();
+//                $("#address").css("border-bottom","2px solid #F90A0A");
+//                $("#address_error_message").css("color","#F90A0A");
+//                address_error = true;
+//             }
+//          }  
 
          $("#user_form").on('submit', function() {
            
