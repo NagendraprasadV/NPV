@@ -39,7 +39,7 @@ class crud {
         $j = 0;
 
         foreach($data as $key => $values){
-            $i.= "'$values'";
+            $i.= "'addslashes($values)'";
             if(++$j < count($data)){
                 $i.=",";
             }
