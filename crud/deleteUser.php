@@ -4,7 +4,7 @@ include_once 'crud.php';
 if(isset($_GET['id'])){
     $id = $_GET['id'];
     $cruds->deleteUser($id);
-    
+ header("Location: index.php");   
 }
 else if (isset($_POST['selectUseId'])){
 
